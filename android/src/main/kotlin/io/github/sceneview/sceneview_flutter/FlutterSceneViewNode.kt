@@ -72,7 +72,7 @@ class FlutterScale(val scale: Float3) {
     companion object {
         fun from(map: Map<String, Float>?): FlutterScale {
             if (map == null) {
-                return FlutterScale(Float3(0f, 0f, 0f))
+                return FlutterScale(Float3(1f, 1f, 1f))
             }
             val x = (map["x"] as Double).toFloat()
             val y = (map["y"] as Double).toFloat()
